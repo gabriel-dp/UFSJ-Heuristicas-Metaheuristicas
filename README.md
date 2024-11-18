@@ -12,6 +12,7 @@
 
 [`> Exercícios 01 <`](./exercicios-01/)
 [`> Exercícios 02 <`](./exercicios-02/)
+[`> Exercícios 03 <`](./exercicios-03/)
 
 > Em progresso...
 
