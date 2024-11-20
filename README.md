@@ -10,9 +10,10 @@
 
 ## 📃 Exercícios
 
-[`> Exercícios 01 <`](./exercicios-01/)
-[`> Exercícios 02 <`](./exercicios-02/)
-[`> Exercícios 03 <`](./exercicios-03/)
+- [`> Exercícios 01 <`](./exercicios-01/) - Representação de grafos
+- [`> Exercícios 02 <`](./exercicios-02/) - Busca exaustiva e busca local
+- [`> Exercícios 03 <`](./exercicios-03/) - Métodos Gulosos
+- [`> Exercícios 04 <`](./exercicios-04/) - Simulated Annealing
 
 > Em progresso...
 
