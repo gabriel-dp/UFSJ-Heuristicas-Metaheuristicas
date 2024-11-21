@@ -2,10 +2,13 @@
 
 using namespace std;
 
-#define T_INICIAL 1000000
-#define T_MINIMO 0.0001
-#define A 0.98
+#define T_INICIAL 100000
+#define T_MINIMO 0.001
+#define A 0.999
 #define SA_ITERACOES 100
+
+random_device rd;
+mt19937 gen(rd());
 
 double distancia(pair<int, int> c1, pair<int, int> c2) {
     return sqrt(pow(c1.first - c2.first, 2) + pow(c1.second - c2.second, 2));
@@ -35,16 +38,12 @@ vector<int> caminho_aleatorio(int n) {
         caminho[i] = i + 1;
     }
 
-    random_device rd;
-    mt19937 gen(rd());
-    shuffle(caminho.begin(), caminho.end(), gen);
+    // shuffle(caminho.begin(), caminho.end(), gen);
 
     return caminho;
 }
 
 vector<int> caminho_vizinho(vector<int> caminho) {
-    random_device rd;
-    mt19937 gen(rd());
     uniform_int_distribution<> dis(0, caminho.size() - 1);
 
     int index1 = dis(gen), index2 = dis(gen);
@@ -56,12 +55,11 @@ vector<int> caminho_vizinho(vector<int> caminho) {
 }
 
 bool probilidade_t(double caminho_avaliacao, double vizinho_avaliacao, double t) {
-    random_device rd;
-    mt19937 gen(rd());
     uniform_real_distribution<double> dist(0.0, 1.0);
 
     double aleatorio = dist(gen);
-    double probabilidade = pow(exp(1.0), (vizinho_avaliacao - caminho_avaliacao) / t);
+    double probabilidade = exp((caminho_avaliacao - vizinho_avaliacao) / t);
+    // cout << aleatorio << probabilidade;
 
     return aleatorio < probabilidade;
 }
