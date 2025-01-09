@@ -10,3 +10,5 @@
 
 # exludes compilation object files
 *.o
+
+**/.vscode/**

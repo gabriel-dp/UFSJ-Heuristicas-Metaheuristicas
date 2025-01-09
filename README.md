@@ -23,4 +23,6 @@
 
 ## 📃 Trabalhos
 
+- [`> Trabalho 01 <`](./trabalho-01/) - Simulated Annealing, Busca Tabu e GRASP - TSP e Mochila
+
 > Em progresso...
