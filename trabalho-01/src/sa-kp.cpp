@@ -50,7 +50,7 @@ class Mochila {
         return true;
     }
 
-    bool remove(int indice) {
+    bool remove(size_t indice) {
         if (!(indice >= 0 && indice < carga.size())) return false;
 
         Item removido = *(carga.begin() + indice);

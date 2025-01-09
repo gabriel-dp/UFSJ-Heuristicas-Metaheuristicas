@@ -26,7 +26,7 @@ double distancia(pair<int, int> c1, pair<int, int> c2) {
 /* Funcao objetivo (distancia total do caminho para voltar a origem) */
 double avalia(vector<int> caminho, map<int, map<int, double>>& grafo) {
     double total = 0;
-    for (int i = 1; i < caminho.size(); i++) {
+    for (size_t i = 1; i < caminho.size(); i++) {
         total += grafo[caminho[i - 1]][caminho[i]];
     }
     total += grafo[caminho[caminho.size() - 1]][caminho[0]];
@@ -36,7 +36,7 @@ double avalia(vector<int> caminho, map<int, map<int, double>>& grafo) {
 /* Imprimindo solucao (cidades do caminho) */
 void imprime_caminho(vector<int> caminho) {
     cout << "|";
-    for (int i = 0; i < caminho.size(); i++) {
+    for (size_t i = 0; i < caminho.size(); i++) {
         cout << caminho[i] << "|";
     }
     cout << "\n";
