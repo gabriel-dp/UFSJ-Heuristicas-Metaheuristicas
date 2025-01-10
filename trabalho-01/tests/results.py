@@ -1,49 +1,43 @@
-import seaborn as sns
-import matplotlib.pyplot as plt
 import sys
+import matplotlib.pyplot as plt
 
-if len(sys.argv) < 3:
-    print("Usage: python results.py <filename> <algorithm>")
-    sys.exit(1)
-file_path = sys.argv[1]
-algorithm = sys.argv[2]
+def plot_solution(file_path, plot_title, target_value):
+    # Initialize lists for X and Y values
+    x_vals = []
+    y_vals = []
 
-try:
-    with open(file_path, "r") as file:
-        lines = file.readlines()
+    # Read the file and process each line
+    with open(file_path, 'r') as file:
+        for line in file:
+            # Split the line on the basis of '|' and extract the solution values
+            parts = line.strip().split('|')
+            # Extract the Y value (the last part in parentheses)
+            y_value = float(parts[-1].strip()[1:-1])  # Removing the parentheses
+            x_vals.append(len(x_vals) + 1)  # X is the line number
+            y_vals.append(y_value)
 
-    data = []
-    for line in lines:
-        try:
-            data.append(float(line.strip()))
-        except ValueError:
-            continue
+    # Create a scatter plot for the solutions
+    plt.scatter(x_vals, y_vals, color='blue', label='Soluções')
+    
+    # Plot the target value as a red dashed line
+    plt.axhline(y=target_value, color='red', linestyle='--', label=f'Solução ótima ({target_value})')
 
-    if len(data) > 1:
-        data = data[:-1]
+    # Adding title and labels
+    plt.title(plot_title)
+    plt.xlabel('Execução')
+    plt.ylabel('Resultado')
+    
+    # Adding a legend
+    plt.legend()
 
-    iterations = list(range(1, len(data) + 1))
-    sns.set(style="whitegrid")
+    # Show the plot
+    plt.show()
 
-    plt.figure(figsize=(10, 6))
-    sns.lineplot(x=iterations, y=data, color="blue", linewidth=0.1)  # Reduced line thickness
-
-    plt.title(f"Progresso do algoritmo {algorithm}", fontsize=16)
-    plt.xlabel("Solução aceita", fontsize=12)
-    plt.ylabel("Função Objetivo", fontsize=12)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-
-    # Adjust both axis start
-    plt.xlim(left=0)
-    plt.ylim(bottom=426)
-
-    output_file = "progress.png"
-    plt.tight_layout()
-    plt.savefig(output_file)
-    print(f"Plot saved as {output_file}")
-
-except FileNotFoundError:
-    print(f"Error: File '{file_path}' not found.")
-except Exception as e:
-    print(f"An error occurred: {e}")
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Uso correto: python script.py <file_path> <plot_title> <target_value>")
+    else:
+        file_path = sys.argv[1]
+        plot_title = sys.argv[2]
+        target_value = float(sys.argv[3])
+        plot_solution(file_path, plot_title, target_value)

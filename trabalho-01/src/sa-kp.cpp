@@ -84,7 +84,7 @@ class Mochila {
         for (Item i : carga) {
             cout << "|" << i.indice;
         }
-        cout << "| (v=" << valor_atual << ", p=" << capacidade_atual << ")\n";
+        cout << "| (" << valor_atual << ")\n";
     }
 };
 
@@ -175,7 +175,7 @@ pair<peso_t, vector<Item>> recebe_capacidade_itens() {
 
     // Itens da mochila
     for (int i = 0; i < n; i++) {
-        cin >> peso >> valor;
+        cin >> valor >> peso;
         itens[i] = Item(peso, valor, i + 1);
     }
 
@@ -211,8 +211,7 @@ int main(int argc, char* argv[]) {
     pair<double, vector<Item>> dados = recebe_capacidade_itens();
 
     Mochila melhor_encontrado = sa_func(dados.first, dados.second);
-
-    cout << melhor_encontrado.valor_atual << "\n";
+    melhor_encontrado.imprime();
 
     return 0;
 }

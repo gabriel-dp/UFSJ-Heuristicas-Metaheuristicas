@@ -24,7 +24,7 @@ double distancia(pair<int, int> c1, pair<int, int> c2) {
 }
 
 /* Funcao objetivo (distancia total do caminho para voltar a origem) */
-double avalia(vector<int> caminho, map<int, map<int, double>>& grafo) {
+double avalia(vector<int>& caminho, map<int, map<int, double>>& grafo) {
     double total = 0;
     for (size_t i = 1; i < caminho.size(); i++) {
         total += grafo[caminho[i - 1]][caminho[i]];
@@ -34,12 +34,12 @@ double avalia(vector<int> caminho, map<int, map<int, double>>& grafo) {
 }
 
 /* Imprimindo solucao (cidades do caminho) */
-void imprime_caminho(vector<int> caminho) {
+void imprime_caminho(vector<int>& caminho, map<int, map<int, double>>& grafo) {
     cout << "|";
     for (size_t i = 0; i < caminho.size(); i++) {
         cout << caminho[i] << "|";
     }
-    cout << "\n";
+    cout << " (" << avalia(caminho, grafo) << ")\n";
 }
 
 /* Solucao aleatoria (caminho embaralhado) */
@@ -171,9 +171,7 @@ int main(int argc, char* argv[]) {
     auto grafo = recebe_grafo();
 
     pair<vector<int>, double> melhor_encontrado = sa_func(grafo);
-
-    imprime_caminho(melhor_encontrado.first);
-    cout << melhor_encontrado.second << "\n";
+    imprime_caminho(melhor_encontrado.first, grafo);
 
     return 0;
 }
