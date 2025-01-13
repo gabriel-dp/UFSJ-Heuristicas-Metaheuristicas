@@ -1,0 +1,401 @@
+sa-tsp
+Average Results:
+Parameters: (100, 0.1, 0.5, 5), Average Value: 1338.09, Average Time: 0.0042 seconds
+Parameters: (100, 0.1, 0.5, 10), Average Value: 1204.50, Average Time: 0.0037 seconds
+Parameters: (100, 0.1, 0.5, 50), Average Value: 922.21, Average Time: 0.0056 seconds
+Parameters: (100, 0.1, 0.5, 100), Average Value: 805.18, Average Time: 0.0064 seconds
+Parameters: (100, 0.1, 0.75, 5), Average Value: 1178.84, Average Time: 0.0045 seconds
+Parameters: (100, 0.1, 0.75, 10), Average Value: 1006.54, Average Time: 0.0050 seconds
+Parameters: (100, 0.1, 0.75, 50), Average Value: 757.03, Average Time: 0.0058 seconds
+Parameters: (100, 0.1, 0.75, 100), Average Value: 654.26, Average Time: 0.0088 seconds
+Parameters: (100, 0.1, 0.9, 5), Average Value: 984.10, Average Time: 0.0048 seconds
+Parameters: (100, 0.1, 0.9, 10), Average Value: 854.63, Average Time: 0.0062 seconds
+Parameters: (100, 0.1, 0.9, 50), Average Value: 610.09, Average Time: 0.0076 seconds
+Parameters: (100, 0.1, 0.9, 100), Average Value: 574.62, Average Time: 0.0207 seconds
+Parameters: (100, 0.1, 0.999, 5), Average Value: 519.14, Average Time: 0.0464 seconds
+Parameters: (100, 0.1, 0.999, 10), Average Value: 503.99, Average Time: 0.0804 seconds
+Parameters: (100, 0.1, 0.999, 50), Average Value: 469.69, Average Time: 0.3269 seconds
+Parameters: (100, 0.1, 0.999, 100), Average Value: 453.38, Average Time: 0.6234 seconds
+Parameters: (100, 0.01, 0.5, 5), Average Value: 1266.91, Average Time: 0.0039 seconds
+Parameters: (100, 0.01, 0.5, 10), Average Value: 1124.64, Average Time: 0.0046 seconds
+Parameters: (100, 0.01, 0.5, 50), Average Value: 851.30, Average Time: 0.0054 seconds
+Parameters: (100, 0.01, 0.5, 100), Average Value: 722.76, Average Time: 0.0077 seconds
+Parameters: (100, 0.01, 0.75, 5), Average Value: 1091.69, Average Time: 0.0048 seconds
+Parameters: (100, 0.01, 0.75, 10), Average Value: 961.78, Average Time: 0.0048 seconds
+Parameters: (100, 0.01, 0.75, 50), Average Value: 690.69, Average Time: 0.0058 seconds
+Parameters: (100, 0.01, 0.75, 100), Average Value: 634.05, Average Time: 0.0107 seconds
+Parameters: (100, 0.01, 0.9, 5), Average Value: 918.06, Average Time: 0.0053 seconds
+Parameters: (100, 0.01, 0.9, 10), Average Value: 797.15, Average Time: 0.0054 seconds
+Parameters: (100, 0.01, 0.9, 50), Average Value: 596.52, Average Time: 0.0158 seconds
+Parameters: (100, 0.01, 0.9, 100), Average Value: 566.91, Average Time: 0.0206 seconds
+Parameters: (100, 0.01, 0.999, 5), Average Value: 514.29, Average Time: 0.0677 seconds
+Parameters: (100, 0.01, 0.999, 10), Average Value: 477.04, Average Time: 0.0970 seconds
+Parameters: (100, 0.01, 0.999, 50), Average Value: 468.25, Average Time: 0.4218 seconds
+Parameters: (100, 0.01, 0.999, 100), Average Value: 463.18, Average Time: 0.8081 seconds
+Parameters: (100, 0.001, 0.5, 5), Average Value: 1195.54, Average Time: 0.0036 seconds
+Parameters: (100, 0.001, 0.5, 10), Average Value: 1073.58, Average Time: 0.0041 seconds
+Parameters: (100, 0.001, 0.5, 50), Average Value: 803.15, Average Time: 0.0048 seconds
+Parameters: (100, 0.001, 0.5, 100), Average Value: 722.51, Average Time: 0.0071 seconds
+Parameters: (100, 0.001, 0.75, 5), Average Value: 1026.07, Average Time: 0.0040 seconds
+Parameters: (100, 0.001, 0.75, 10), Average Value: 895.04, Average Time: 0.0042 seconds
+Parameters: (100, 0.001, 0.75, 50), Average Value: 659.17, Average Time: 0.0064 seconds
+Parameters: (100, 0.001, 0.75, 100), Average Value: 607.76, Average Time: 0.0099 seconds
+Parameters: (100, 0.001, 0.9, 5), Average Value: 831.27, Average Time: 0.0046 seconds
+Parameters: (100, 0.001, 0.9, 10), Average Value: 748.31, Average Time: 0.0054 seconds
+Parameters: (100, 0.001, 0.9, 50), Average Value: 584.37, Average Time: 0.0173 seconds
+Parameters: (100, 0.001, 0.9, 100), Average Value: 559.76, Average Time: 0.0207 seconds
+Parameters: (100, 0.001, 0.999, 5), Average Value: 501.77, Average Time: 0.0668 seconds
+Parameters: (100, 0.001, 0.999, 10), Average Value: 497.34, Average Time: 0.1273 seconds
+Parameters: (100, 0.001, 0.999, 50), Average Value: 469.77, Average Time: 0.5100 seconds
+Parameters: (100, 0.001, 0.999, 100), Average Value: 462.40, Average Time: 1.0071 seconds
+Parameters: (1000, 0.1, 0.5, 5), Average Value: 1301.09, Average Time: 0.0044 seconds
+Parameters: (1000, 0.1, 0.5, 10), Average Value: 1191.94, Average Time: 0.0038 seconds
+Parameters: (1000, 0.1, 0.5, 50), Average Value: 873.86, Average Time: 0.0057 seconds
+Parameters: (1000, 0.1, 0.5, 100), Average Value: 779.90, Average Time: 0.0057 seconds
+Parameters: (1000, 0.1, 0.75, 5), Average Value: 1152.66, Average Time: 0.0046 seconds
+Parameters: (1000, 0.1, 0.75, 10), Average Value: 991.86, Average Time: 0.0045 seconds
+Parameters: (1000, 0.1, 0.75, 50), Average Value: 737.21, Average Time: 0.0077 seconds
+Parameters: (1000, 0.1, 0.75, 100), Average Value: 647.95, Average Time: 0.0116 seconds
+Parameters: (1000, 0.1, 0.9, 5), Average Value: 982.73, Average Time: 0.0052 seconds
+Parameters: (1000, 0.1, 0.9, 10), Average Value: 851.74, Average Time: 0.0061 seconds
+Parameters: (1000, 0.1, 0.9, 50), Average Value: 634.57, Average Time: 0.0115 seconds
+Parameters: (1000, 0.1, 0.9, 100), Average Value: 568.31, Average Time: 0.0272 seconds
+Parameters: (1000, 0.1, 0.999, 5), Average Value: 508.67, Average Time: 0.0618 seconds
+Parameters: (1000, 0.1, 0.999, 10), Average Value: 488.44, Average Time: 0.1085 seconds
+Parameters: (1000, 0.1, 0.999, 50), Average Value: 462.07, Average Time: 0.4432 seconds
+Parameters: (1000, 0.1, 0.999, 100), Average Value: 464.01, Average Time: 0.8428 seconds
+Parameters: (1000, 0.01, 0.5, 5), Average Value: 1291.07, Average Time: 0.0034 seconds
+Parameters: (1000, 0.01, 0.5, 10), Average Value: 1163.10, Average Time: 0.0032 seconds
+Parameters: (1000, 0.01, 0.5, 50), Average Value: 837.68, Average Time: 0.0049 seconds
+Parameters: (1000, 0.01, 0.5, 100), Average Value: 745.90, Average Time: 0.0073 seconds
+Parameters: (1000, 0.01, 0.75, 5), Average Value: 1088.54, Average Time: 0.0049 seconds
+Parameters: (1000, 0.01, 0.75, 10), Average Value: 947.67, Average Time: 0.0049 seconds
+Parameters: (1000, 0.01, 0.75, 50), Average Value: 711.24, Average Time: 0.0086 seconds
+Parameters: (1000, 0.01, 0.75, 100), Average Value: 613.88, Average Time: 0.0125 seconds
+Parameters: (1000, 0.01, 0.9, 5), Average Value: 911.67, Average Time: 0.0048 seconds
+Parameters: (1000, 0.01, 0.9, 10), Average Value: 770.99, Average Time: 0.0066 seconds
+Parameters: (1000, 0.01, 0.9, 50), Average Value: 610.01, Average Time: 0.0151 seconds
+Parameters: (1000, 0.01, 0.9, 100), Average Value: 538.24, Average Time: 0.0258 seconds
+Parameters: (1000, 0.01, 0.999, 5), Average Value: 504.31, Average Time: 0.0765 seconds
+Parameters: (1000, 0.01, 0.999, 10), Average Value: 485.69, Average Time: 0.1223 seconds
+Parameters: (1000, 0.01, 0.999, 50), Average Value: 471.23, Average Time: 0.5211 seconds
+Parameters: (1000, 0.01, 0.999, 100), Average Value: 466.17, Average Time: 1.0318 seconds
+Parameters: (1000, 0.001, 0.5, 5), Average Value: 1248.08, Average Time: 0.0045 seconds
+Parameters: (1000, 0.001, 0.5, 10), Average Value: 1072.57, Average Time: 0.0050 seconds
+Parameters: (1000, 0.001, 0.5, 50), Average Value: 780.95, Average Time: 0.0064 seconds
+Parameters: (1000, 0.001, 0.5, 100), Average Value: 697.96, Average Time: 0.0071 seconds
+Parameters: (1000, 0.001, 0.75, 5), Average Value: 1024.74, Average Time: 0.0044 seconds
+Parameters: (1000, 0.001, 0.75, 10), Average Value: 901.62, Average Time: 0.0055 seconds
+Parameters: (1000, 0.001, 0.75, 50), Average Value: 693.08, Average Time: 0.0109 seconds
+Parameters: (1000, 0.001, 0.75, 100), Average Value: 621.88, Average Time: 0.0131 seconds
+Parameters: (1000, 0.001, 0.9, 5), Average Value: 878.91, Average Time: 0.0050 seconds
+Parameters: (1000, 0.001, 0.9, 10), Average Value: 774.37, Average Time: 0.0069 seconds
+Parameters: (1000, 0.001, 0.9, 50), Average Value: 588.49, Average Time: 0.0201 seconds
+Parameters: (1000, 0.001, 0.9, 100), Average Value: 561.91, Average Time: 0.0315 seconds
+Parameters: (1000, 0.001, 0.999, 5), Average Value: 500.15, Average Time: 0.0743 seconds
+Parameters: (1000, 0.001, 0.999, 10), Average Value: 495.25, Average Time: 0.1413 seconds
+Parameters: (1000, 0.001, 0.999, 50), Average Value: 464.70, Average Time: 0.6263 seconds
+Parameters: (1000, 0.001, 0.999, 100), Average Value: 457.02, Average Time: 1.2246 seconds
+Parameters: (10000, 0.1, 0.5, 5), Average Value: 1315.06, Average Time: 0.0041 seconds
+Parameters: (10000, 0.1, 0.5, 10), Average Value: 1209.62, Average Time: 0.0040 seconds
+Parameters: (10000, 0.1, 0.5, 50), Average Value: 898.70, Average Time: 0.0061 seconds
+Parameters: (10000, 0.1, 0.5, 100), Average Value: 791.58, Average Time: 0.0086 seconds
+Parameters: (10000, 0.1, 0.75, 5), Average Value: 1158.68, Average Time: 0.0041 seconds
+Parameters: (10000, 0.1, 0.75, 10), Average Value: 1007.55, Average Time: 0.0043 seconds
+Parameters: (10000, 0.1, 0.75, 50), Average Value: 753.21, Average Time: 0.0071 seconds
+Parameters: (10000, 0.1, 0.75, 100), Average Value: 668.51, Average Time: 0.0101 seconds
+Parameters: (10000, 0.1, 0.9, 5), Average Value: 974.90, Average Time: 0.0060 seconds
+Parameters: (10000, 0.1, 0.9, 10), Average Value: 820.11, Average Time: 0.0065 seconds
+Parameters: (10000, 0.1, 0.9, 50), Average Value: 624.53, Average Time: 0.0134 seconds
+Parameters: (10000, 0.1, 0.9, 100), Average Value: 583.90, Average Time: 0.0237 seconds
+Parameters: (10000, 0.1, 0.999, 5), Average Value: 503.62, Average Time: 0.0682 seconds
+Parameters: (10000, 0.1, 0.999, 10), Average Value: 486.60, Average Time: 0.1293 seconds
+Parameters: (10000, 0.1, 0.999, 50), Average Value: 466.78, Average Time: 0.5400 seconds
+Parameters: (10000, 0.1, 0.999, 100), Average Value: 458.39, Average Time: 1.0618 seconds
+Parameters: (10000, 0.01, 0.5, 5), Average Value: 1294.36, Average Time: 0.0039 seconds
+Parameters: (10000, 0.01, 0.5, 10), Average Value: 1145.39, Average Time: 0.0036 seconds
+Parameters: (10000, 0.01, 0.5, 50), Average Value: 852.88, Average Time: 0.0053 seconds
+Parameters: (10000, 0.01, 0.5, 100), Average Value: 740.99, Average Time: 0.0064 seconds
+Parameters: (10000, 0.01, 0.75, 5), Average Value: 1083.58, Average Time: 0.0043 seconds
+Parameters: (10000, 0.01, 0.75, 10), Average Value: 950.40, Average Time: 0.0045 seconds
+Parameters: (10000, 0.01, 0.75, 50), Average Value: 686.04, Average Time: 0.0088 seconds
+Parameters: (10000, 0.01, 0.75, 100), Average Value: 627.29, Average Time: 0.0143 seconds
+Parameters: (10000, 0.01, 0.9, 5), Average Value: 866.69, Average Time: 0.0054 seconds
+Parameters: (10000, 0.01, 0.9, 10), Average Value: 794.25, Average Time: 0.0062 seconds
+Parameters: (10000, 0.01, 0.9, 50), Average Value: 606.65, Average Time: 0.0185 seconds
+Parameters: (10000, 0.01, 0.9, 100), Average Value: 563.19, Average Time: 0.0291 seconds
+Parameters: (10000, 0.01, 0.999, 5), Average Value: 505.74, Average Time: 0.0866 seconds
+Parameters: (10000, 0.01, 0.999, 10), Average Value: 487.35, Average Time: 0.1359 seconds
+Parameters: (10000, 0.01, 0.999, 50), Average Value: 467.31, Average Time: 0.6396 seconds
+Parameters: (10000, 0.01, 0.999, 100), Average Value: 455.42, Average Time: 1.2613 seconds
+Parameters: (10000, 0.001, 0.5, 5), Average Value: 1235.60, Average Time: 0.0038 seconds
+Parameters: (10000, 0.001, 0.5, 10), Average Value: 1055.92, Average Time: 0.0047 seconds
+Parameters: (10000, 0.001, 0.5, 50), Average Value: 779.69, Average Time: 0.0053 seconds
+Parameters: (10000, 0.001, 0.5, 100), Average Value: 704.71, Average Time: 0.0078 seconds
+Parameters: (10000, 0.001, 0.75, 5), Average Value: 1012.02, Average Time: 0.0043 seconds
+Parameters: (10000, 0.001, 0.75, 10), Average Value: 920.97, Average Time: 0.0045 seconds
+Parameters: (10000, 0.001, 0.75, 50), Average Value: 674.00, Average Time: 0.0066 seconds
+Parameters: (10000, 0.001, 0.75, 100), Average Value: 601.31, Average Time: 0.0130 seconds
+Parameters: (10000, 0.001, 0.9, 5), Average Value: 876.34, Average Time: 0.0048 seconds
+Parameters: (10000, 0.001, 0.9, 10), Average Value: 723.61, Average Time: 0.0060 seconds
+Parameters: (10000, 0.001, 0.9, 50), Average Value: 603.90, Average Time: 0.0156 seconds
+Parameters: (10000, 0.001, 0.9, 100), Average Value: 569.09, Average Time: 0.0288 seconds
+Parameters: (10000, 0.001, 0.999, 5), Average Value: 515.06, Average Time: 0.0883 seconds
+Parameters: (10000, 0.001, 0.999, 10), Average Value: 505.42, Average Time: 0.1595 seconds
+Parameters: (10000, 0.001, 0.999, 50), Average Value: 467.14, Average Time: 0.7327 seconds
+Parameters: (10000, 0.001, 0.999, 100), Average Value: 459.19, Average Time: 1.4437 seconds
+
+sa-kp
+Average Results:
+Parameters: (100, 0.1, 0.5, 5), Average Value: 4445.20, Average Time: 0.0040 seconds
+Parameters: (100, 0.1, 0.5, 10), Average Value: 4666.80, Average Time: 0.0030 seconds
+Parameters: (100, 0.1, 0.5, 50), Average Value: 8230.70, Average Time: 0.0032 seconds
+Parameters: (100, 0.1, 0.5, 100), Average Value: 8285.20, Average Time: 0.0031 seconds
+Parameters: (100, 0.1, 0.75, 5), Average Value: 6009.10, Average Time: 0.0027 seconds
+Parameters: (100, 0.1, 0.75, 10), Average Value: 6977.70, Average Time: 0.0032 seconds
+Parameters: (100, 0.1, 0.75, 50), Average Value: 8099.00, Average Time: 0.0035 seconds
+Parameters: (100, 0.1, 0.75, 100), Average Value: 8926.00, Average Time: 0.0033 seconds
+Parameters: (100, 0.1, 0.9, 5), Average Value: 7391.30, Average Time: 0.0030 seconds
+Parameters: (100, 0.1, 0.9, 10), Average Value: 7725.20, Average Time: 0.0034 seconds
+Parameters: (100, 0.1, 0.9, 50), Average Value: 8592.20, Average Time: 0.0034 seconds
+Parameters: (100, 0.1, 0.9, 100), Average Value: 8886.00, Average Time: 0.0044 seconds
+Parameters: (100, 0.1, 0.999, 5), Average Value: 9125.20, Average Time: 0.0085 seconds
+Parameters: (100, 0.1, 0.999, 10), Average Value: 9108.20, Average Time: 0.0129 seconds
+Parameters: (100, 0.1, 0.999, 50), Average Value: 9147.00, Average Time: 0.0533 seconds
+Parameters: (100, 0.1, 0.999, 100), Average Value: 9147.00, Average Time: 0.0748 seconds
+Parameters: (100, 0.01, 0.5, 5), Average Value: 4645.50, Average Time: 0.0035 seconds
+Parameters: (100, 0.01, 0.5, 10), Average Value: 5720.80, Average Time: 0.0029 seconds
+Parameters: (100, 0.01, 0.5, 50), Average Value: 7690.40, Average Time: 0.0032 seconds
+Parameters: (100, 0.01, 0.5, 100), Average Value: 8774.40, Average Time: 0.0033 seconds
+Parameters: (100, 0.01, 0.75, 5), Average Value: 5802.60, Average Time: 0.0034 seconds
+Parameters: (100, 0.01, 0.75, 10), Average Value: 6927.10, Average Time: 0.0031 seconds
+Parameters: (100, 0.01, 0.75, 50), Average Value: 8446.80, Average Time: 0.0034 seconds
+Parameters: (100, 0.01, 0.75, 100), Average Value: 8475.20, Average Time: 0.0039 seconds
+Parameters: (100, 0.01, 0.9, 5), Average Value: 7649.10, Average Time: 0.0033 seconds
+Parameters: (100, 0.01, 0.9, 10), Average Value: 8253.20, Average Time: 0.0034 seconds
+Parameters: (100, 0.01, 0.9, 50), Average Value: 8575.80, Average Time: 0.0043 seconds
+Parameters: (100, 0.01, 0.9, 100), Average Value: 8780.70, Average Time: 0.0040 seconds
+Parameters: (100, 0.01, 0.999, 5), Average Value: 9079.80, Average Time: 0.0089 seconds
+Parameters: (100, 0.01, 0.999, 10), Average Value: 9147.00, Average Time: 0.0183 seconds
+Parameters: (100, 0.01, 0.999, 50), Average Value: 9147.00, Average Time: 0.0530 seconds
+Parameters: (100, 0.01, 0.999, 100), Average Value: 9147.00, Average Time: 0.0954 seconds
+Parameters: (100, 0.001, 0.5, 5), Average Value: 4904.90, Average Time: 0.0032 seconds
+Parameters: (100, 0.001, 0.5, 10), Average Value: 6202.30, Average Time: 0.0028 seconds
+Parameters: (100, 0.001, 0.5, 50), Average Value: 8317.80, Average Time: 0.0035 seconds
+Parameters: (100, 0.001, 0.5, 100), Average Value: 8685.70, Average Time: 0.0036 seconds
+Parameters: (100, 0.001, 0.75, 5), Average Value: 6826.50, Average Time: 0.0031 seconds
+Parameters: (100, 0.001, 0.75, 10), Average Value: 7689.90, Average Time: 0.0030 seconds
+Parameters: (100, 0.001, 0.75, 50), Average Value: 8903.90, Average Time: 0.0037 seconds
+Parameters: (100, 0.001, 0.75, 100), Average Value: 8876.90, Average Time: 0.0038 seconds
+Parameters: (100, 0.001, 0.9, 5), Average Value: 7647.00, Average Time: 0.0026 seconds
+Parameters: (100, 0.001, 0.9, 10), Average Value: 8081.50, Average Time: 0.0028 seconds
+Parameters: (100, 0.001, 0.9, 50), Average Value: 8691.40, Average Time: 0.0037 seconds
+Parameters: (100, 0.001, 0.9, 100), Average Value: 8960.70, Average Time: 0.0045 seconds
+Parameters: (100, 0.001, 0.999, 5), Average Value: 9126.30, Average Time: 0.0149 seconds
+Parameters: (100, 0.001, 0.999, 10), Average Value: 9125.20, Average Time: 0.0238 seconds
+Parameters: (100, 0.001, 0.999, 50), Average Value: 9147.00, Average Time: 0.0691 seconds
+Parameters: (100, 0.001, 0.999, 100), Average Value: 9147.00, Average Time: 0.1213 seconds
+Parameters: (1000, 0.1, 0.5, 5), Average Value: 4443.80, Average Time: 0.0027 seconds
+Parameters: (1000, 0.1, 0.5, 10), Average Value: 6189.20, Average Time: 0.0028 seconds
+Parameters: (1000, 0.1, 0.5, 50), Average Value: 8203.10, Average Time: 0.0025 seconds
+Parameters: (1000, 0.1, 0.5, 100), Average Value: 8424.30, Average Time: 0.0028 seconds
+Parameters: (1000, 0.1, 0.75, 5), Average Value: 6384.80, Average Time: 0.0031 seconds
+Parameters: (1000, 0.1, 0.75, 10), Average Value: 7208.60, Average Time: 0.0027 seconds
+Parameters: (1000, 0.1, 0.75, 50), Average Value: 8252.30, Average Time: 0.0028 seconds
+Parameters: (1000, 0.1, 0.75, 100), Average Value: 8619.50, Average Time: 0.0041 seconds
+Parameters: (1000, 0.1, 0.9, 5), Average Value: 7419.80, Average Time: 0.0030 seconds
+Parameters: (1000, 0.1, 0.9, 10), Average Value: 8760.90, Average Time: 0.0029 seconds
+Parameters: (1000, 0.1, 0.9, 50), Average Value: 8872.20, Average Time: 0.0036 seconds
+Parameters: (1000, 0.1, 0.9, 100), Average Value: 8900.70, Average Time: 0.0035 seconds
+Parameters: (1000, 0.1, 0.999, 5), Average Value: 9103.40, Average Time: 0.0091 seconds
+Parameters: (1000, 0.1, 0.999, 10), Average Value: 9125.20, Average Time: 0.0210 seconds
+Parameters: (1000, 0.1, 0.999, 50), Average Value: 9147.00, Average Time: 0.0561 seconds
+Parameters: (1000, 0.1, 0.999, 100), Average Value: 9147.00, Average Time: 0.0963 seconds
+Parameters: (1000, 0.01, 0.5, 5), Average Value: 4829.90, Average Time: 0.0035 seconds
+Parameters: (1000, 0.01, 0.5, 10), Average Value: 6726.80, Average Time: 0.0031 seconds
+Parameters: (1000, 0.01, 0.5, 50), Average Value: 8468.80, Average Time: 0.0032 seconds
+Parameters: (1000, 0.01, 0.5, 100), Average Value: 8197.80, Average Time: 0.0040 seconds
+Parameters: (1000, 0.01, 0.75, 5), Average Value: 6721.50, Average Time: 0.0036 seconds
+Parameters: (1000, 0.01, 0.75, 10), Average Value: 7617.10, Average Time: 0.0036 seconds
+Parameters: (1000, 0.01, 0.75, 50), Average Value: 8608.20, Average Time: 0.0037 seconds
+Parameters: (1000, 0.01, 0.75, 100), Average Value: 8889.00, Average Time: 0.0043 seconds
+Parameters: (1000, 0.01, 0.9, 5), Average Value: 8061.30, Average Time: 0.0036 seconds
+Parameters: (1000, 0.01, 0.9, 10), Average Value: 8378.40, Average Time: 0.0036 seconds
+Parameters: (1000, 0.01, 0.9, 50), Average Value: 8964.20, Average Time: 0.0044 seconds
+Parameters: (1000, 0.01, 0.9, 100), Average Value: 8951.40, Average Time: 0.0052 seconds
+Parameters: (1000, 0.01, 0.999, 5), Average Value: 9147.00, Average Time: 0.0150 seconds
+Parameters: (1000, 0.01, 0.999, 10), Average Value: 9125.20, Average Time: 0.0214 seconds
+Parameters: (1000, 0.01, 0.999, 50), Average Value: 9147.00, Average Time: 0.0555 seconds
+Parameters: (1000, 0.01, 0.999, 100), Average Value: 9147.00, Average Time: 0.1127 seconds
+Parameters: (1000, 0.001, 0.5, 5), Average Value: 5599.40, Average Time: 0.0029 seconds
+Parameters: (1000, 0.001, 0.5, 10), Average Value: 6154.40, Average Time: 0.0022 seconds
+Parameters: (1000, 0.001, 0.5, 50), Average Value: 8085.90, Average Time: 0.0029 seconds
+Parameters: (1000, 0.001, 0.5, 100), Average Value: 8723.30, Average Time: 0.0035 seconds
+Parameters: (1000, 0.001, 0.75, 5), Average Value: 6978.80, Average Time: 0.0034 seconds
+Parameters: (1000, 0.001, 0.75, 10), Average Value: 7939.50, Average Time: 0.0031 seconds
+Parameters: (1000, 0.001, 0.75, 50), Average Value: 8881.70, Average Time: 0.0035 seconds
+Parameters: (1000, 0.001, 0.75, 100), Average Value: 8844.30, Average Time: 0.0039 seconds
+Parameters: (1000, 0.001, 0.9, 5), Average Value: 8217.90, Average Time: 0.0028 seconds
+Parameters: (1000, 0.001, 0.9, 10), Average Value: 8825.50, Average Time: 0.0038 seconds
+Parameters: (1000, 0.001, 0.9, 50), Average Value: 8895.80, Average Time: 0.0041 seconds
+Parameters: (1000, 0.001, 0.9, 100), Average Value: 9022.90, Average Time: 0.0052 seconds
+Parameters: (1000, 0.001, 0.999, 5), Average Value: 9125.20, Average Time: 0.0144 seconds
+Parameters: (1000, 0.001, 0.999, 10), Average Value: 9147.00, Average Time: 0.0312 seconds
+Parameters: (1000, 0.001, 0.999, 50), Average Value: 9147.00, Average Time: 0.0846 seconds
+Parameters: (1000, 0.001, 0.999, 100), Average Value: 9147.00, Average Time: 0.1342 seconds
+Parameters: (10000, 0.1, 0.5, 5), Average Value: 4373.20, Average Time: 0.0033 seconds
+Parameters: (10000, 0.1, 0.5, 10), Average Value: 5885.50, Average Time: 0.0031 seconds
+Parameters: (10000, 0.1, 0.5, 50), Average Value: 8091.90, Average Time: 0.0029 seconds
+Parameters: (10000, 0.1, 0.5, 100), Average Value: 8268.10, Average Time: 0.0032 seconds
+Parameters: (10000, 0.1, 0.75, 5), Average Value: 6758.00, Average Time: 0.0031 seconds
+Parameters: (10000, 0.1, 0.75, 10), Average Value: 7516.70, Average Time: 0.0031 seconds
+Parameters: (10000, 0.1, 0.75, 50), Average Value: 8591.20, Average Time: 0.0030 seconds
+Parameters: (10000, 0.1, 0.75, 100), Average Value: 8647.70, Average Time: 0.0045 seconds
+Parameters: (10000, 0.1, 0.9, 5), Average Value: 7892.70, Average Time: 0.0027 seconds
+Parameters: (10000, 0.1, 0.9, 10), Average Value: 8088.20, Average Time: 0.0030 seconds
+Parameters: (10000, 0.1, 0.9, 50), Average Value: 8872.10, Average Time: 0.0035 seconds
+Parameters: (10000, 0.1, 0.9, 100), Average Value: 9001.10, Average Time: 0.0045 seconds
+Parameters: (10000, 0.1, 0.999, 5), Average Value: 9147.00, Average Time: 0.0102 seconds
+Parameters: (10000, 0.1, 0.999, 10), Average Value: 9147.00, Average Time: 0.0176 seconds
+Parameters: (10000, 0.1, 0.999, 50), Average Value: 9147.00, Average Time: 0.0666 seconds
+Parameters: (10000, 0.1, 0.999, 100), Average Value: 9147.00, Average Time: 0.1096 seconds
+Parameters: (10000, 0.01, 0.5, 5), Average Value: 4945.10, Average Time: 0.0030 seconds
+Parameters: (10000, 0.01, 0.5, 10), Average Value: 6369.80, Average Time: 0.0035 seconds
+Parameters: (10000, 0.01, 0.5, 50), Average Value: 8142.00, Average Time: 0.0033 seconds
+Parameters: (10000, 0.01, 0.5, 100), Average Value: 8595.70, Average Time: 0.0032 seconds
+Parameters: (10000, 0.01, 0.75, 5), Average Value: 6794.30, Average Time: 0.0035 seconds
+Parameters: (10000, 0.01, 0.75, 10), Average Value: 7352.30, Average Time: 0.0029 seconds
+Parameters: (10000, 0.01, 0.75, 50), Average Value: 8556.10, Average Time: 0.0033 seconds
+Parameters: (10000, 0.01, 0.75, 100), Average Value: 8716.10, Average Time: 0.0037 seconds
+Parameters: (10000, 0.01, 0.9, 5), Average Value: 7888.90, Average Time: 0.0031 seconds
+Parameters: (10000, 0.01, 0.9, 10), Average Value: 8288.70, Average Time: 0.0032 seconds
+Parameters: (10000, 0.01, 0.9, 50), Average Value: 8899.80, Average Time: 0.0043 seconds
+Parameters: (10000, 0.01, 0.9, 100), Average Value: 9092.50, Average Time: 0.0049 seconds
+Parameters: (10000, 0.01, 0.999, 5), Average Value: 9147.00, Average Time: 0.0169 seconds
+Parameters: (10000, 0.01, 0.999, 10), Average Value: 9147.00, Average Time: 0.0317 seconds
+Parameters: (10000, 0.01, 0.999, 50), Average Value: 9147.00, Average Time: 0.0811 seconds
+Parameters: (10000, 0.01, 0.999, 100), Average Value: 9147.00, Average Time: 0.1388 seconds
+Parameters: (10000, 0.001, 0.5, 5), Average Value: 6064.50, Average Time: 0.0034 seconds
+Parameters: (10000, 0.001, 0.5, 10), Average Value: 7045.60, Average Time: 0.0026 seconds
+Parameters: (10000, 0.001, 0.5, 50), Average Value: 8555.90, Average Time: 0.0030 seconds
+Parameters: (10000, 0.001, 0.5, 100), Average Value: 8421.40, Average Time: 0.0037 seconds
+Parameters: (10000, 0.001, 0.75, 5), Average Value: 7239.60, Average Time: 0.0031 seconds
+Parameters: (10000, 0.001, 0.75, 10), Average Value: 7790.20, Average Time: 0.0034 seconds
+Parameters: (10000, 0.001, 0.75, 50), Average Value: 8585.50, Average Time: 0.0034 seconds
+Parameters: (10000, 0.001, 0.75, 100), Average Value: 9042.80, Average Time: 0.0037 seconds
+Parameters: (10000, 0.001, 0.9, 5), Average Value: 8428.00, Average Time: 0.0033 seconds
+Parameters: (10000, 0.001, 0.9, 10), Average Value: 8510.70, Average Time: 0.0033 seconds
+Parameters: (10000, 0.001, 0.9, 50), Average Value: 8967.90, Average Time: 0.0042 seconds
+Parameters: (10000, 0.001, 0.9, 100), Average Value: 8938.00, Average Time: 0.0049 seconds
+Parameters: (10000, 0.001, 0.999, 5), Average Value: 9147.00, Average Time: 0.0191 seconds
+Parameters: (10000, 0.001, 0.999, 10), Average Value: 9131.30, Average Time: 0.0295 seconds
+Parameters: (10000, 0.001, 0.999, 50), Average Value: 9147.00, Average Time: 0.0804 seconds
+Parameters: (10000, 0.001, 0.999, 100), Average Value: 9147.00, Average Time: 0.1551 seconds
+
+bt-tsp
+Average Results:
+Parameters: (10, 1), Average Value: 469.32, Average Time: 0.0720 seconds
+Parameters: (10, 5), Average Value: 469.32, Average Time: 0.0733 seconds
+Parameters: (10, 10), Average Value: 469.32, Average Time: 0.0413 seconds
+Parameters: (10, 50), Average Value: 469.32, Average Time: 0.0721 seconds
+Parameters: (10, 100), Average Value: 469.32, Average Time: 0.0727 seconds
+Parameters: (100, 1), Average Value: 469.32, Average Time: 0.4065 seconds
+Parameters: (100, 5), Average Value: 469.32, Average Time: 0.3931 seconds
+Parameters: (100, 10), Average Value: 469.32, Average Time: 0.4067 seconds
+Parameters: (100, 50), Average Value: 466.23, Average Time: 0.3934 seconds
+Parameters: (100, 100), Average Value: 466.23, Average Time: 0.4385 seconds
+Parameters: (1000, 1), Average Value: 469.32, Average Time: 3.7328 seconds
+Parameters: (1000, 5), Average Value: 469.32, Average Time: 3.5303 seconds
+Parameters: (1000, 10), Average Value: 469.32, Average Time: 3.5782 seconds
+Parameters: (1000, 50), Average Value: 466.23, Average Time: 3.8443 seconds
+Parameters: (1000, 100), Average Value: 466.23, Average Time: 4.1113 seconds
+Parameters: (10000, 1), Average Value: 469.32, Average Time: 37.2412 seconds
+Parameters: (10000, 5), Average Value: 469.32, Average Time: 37.6833 seconds
+Parameters: (10000, 10), Average Value: 469.32, Average Time: 35.7464 seconds
+Parameters: (10000, 50), Average Value: 466.23, Average Time: 39.6062 seconds
+Parameters: (10000, 100), Average Value: 466.23, Average Time: 41.8037 seconds
+
+bt-kp
+Average Results:
+Parameters: (10, 1), Average Value: 8929.00, Average Time: 0.0411 seconds
+Parameters: (10, 5), Average Value: 8929.00, Average Time: 0.0029 seconds
+Parameters: (10, 10), Average Value: 8929.00, Average Time: 0.0032 seconds
+Parameters: (10, 50), Average Value: 8929.00, Average Time: 0.0031 seconds
+Parameters: (10, 100), Average Value: 8929.00, Average Time: 0.0028 seconds
+Parameters: (100, 1), Average Value: 8929.00, Average Time: 0.0062 seconds
+Parameters: (100, 5), Average Value: 8929.00, Average Time: 0.0062 seconds
+Parameters: (100, 10), Average Value: 8929.00, Average Time: 0.0067 seconds
+Parameters: (100, 50), Average Value: 8929.00, Average Time: 0.0075 seconds
+Parameters: (100, 100), Average Value: 8929.00, Average Time: 0.0071 seconds
+Parameters: (1000, 1), Average Value: 8929.00, Average Time: 0.0123 seconds
+Parameters: (1000, 5), Average Value: 8929.00, Average Time: 0.0127 seconds
+Parameters: (1000, 10), Average Value: 8929.00, Average Time: 0.0130 seconds
+Parameters: (1000, 50), Average Value: 8929.00, Average Time: 0.0405 seconds
+Parameters: (1000, 100), Average Value: 8929.00, Average Time: 0.0464 seconds
+Parameters: (10000, 1), Average Value: 8929.00, Average Time: 0.1012 seconds
+Parameters: (10000, 5), Average Value: 8929.00, Average Time: 0.1365 seconds
+Parameters: (10000, 10), Average Value: 8929.00, Average Time: 0.1148 seconds
+Parameters: (10000, 50), Average Value: 8929.00, Average Time: 0.1630 seconds
+Parameters: (10000, 100), Average Value: 8929.00, Average Time: 0.1575 seconds
+
+grasp-tsp
+Average Results:
+Parameters: (10, 0.0625), Average Value: 501.85, Average Time: 0.0235 seconds
+Parameters: (10, 0.125), Average Value: 535.50, Average Time: 0.0261 seconds
+Parameters: (10, 0.25), Average Value: 738.41, Average Time: 0.0239 seconds
+Parameters: (10, 0.5), Average Value: 963.40, Average Time: 0.0591 seconds
+Parameters: (10, 0.75), Average Value: 1221.38, Average Time: 0.0561 seconds
+Parameters: (10, 0.875), Average Value: 1224.08, Average Time: 0.0563 seconds
+Parameters: (10, 0.9375), Average Value: 1331.09, Average Time: 0.0241 seconds
+Parameters: (100, 0.0625), Average Value: 475.42, Average Time: 0.2362 seconds
+Parameters: (100, 0.125), Average Value: 542.90, Average Time: 0.2361 seconds
+Parameters: (100, 0.25), Average Value: 678.72, Average Time: 0.2376 seconds
+Parameters: (100, 0.5), Average Value: 940.46, Average Time: 0.2432 seconds
+Parameters: (100, 0.75), Average Value: 1197.48, Average Time: 0.2468 seconds
+Parameters: (100, 0.875), Average Value: 1217.06, Average Time: 0.2482 seconds
+Parameters: (100, 0.9375), Average Value: 1294.34, Average Time: 0.2098 seconds
+Parameters: (1000, 0.0625), Average Value: 465.58, Average Time: 2.0723 seconds
+Parameters: (1000, 0.125), Average Value: 518.64, Average Time: 2.0372 seconds
+Parameters: (1000, 0.25), Average Value: 645.72, Average Time: 2.0400 seconds
+Parameters: (1000, 0.5), Average Value: 898.12, Average Time: 2.0668 seconds
+Parameters: (1000, 0.75), Average Value: 1060.18, Average Time: 2.0611 seconds
+Parameters: (1000, 0.875), Average Value: 1154.02, Average Time: 2.0864 seconds
+Parameters: (1000, 0.9375), Average Value: 1235.63, Average Time: 2.1045 seconds
+Parameters: (10000, 0.0625), Average Value: 451.32, Average Time: 19.7353 seconds
+Parameters: (10000, 0.125), Average Value: 490.11, Average Time: 20.2872 seconds
+Parameters: (10000, 0.25), Average Value: 627.47, Average Time: 20.3972 seconds
+Parameters: (10000, 0.5), Average Value: 864.70, Average Time: 20.3062 seconds
+Parameters: (10000, 0.75), Average Value: 1076.18, Average Time: 20.5717 seconds
+Parameters: (10000, 0.875), Average Value: 1155.99, Average Time: 20.6126 seconds
+Parameters: (10000, 0.9375), Average Value: 1154.01, Average Time: 20.7608 seconds
+
+grasp-kp
+Average Results:
+Parameters: (10, 0.0625), Average Value: 8817.00, Average Time: 0.0263 seconds
+Parameters: (10, 0.125), Average Value: 8900.00, Average Time: 0.0076 seconds
+Parameters: (10, 0.25), Average Value: 8900.00, Average Time: 0.0173 seconds
+Parameters: (10, 0.5), Average Value: 8897.00, Average Time: 0.0078 seconds
+Parameters: (10, 0.75), Average Value: 6994.00, Average Time: 0.0178 seconds
+Parameters: (10, 0.875), Average Value: 7302.00, Average Time: 0.0082 seconds
+Parameters: (10, 0.9375), Average Value: 6166.00, Average Time: 0.0079 seconds
+Parameters: (100, 0.0625), Average Value: 8900.00, Average Time: 0.0463 seconds
+Parameters: (100, 0.125), Average Value: 8900.00, Average Time: 0.0789 seconds
+Parameters: (100, 0.25), Average Value: 9147.00, Average Time: 0.0781 seconds
+Parameters: (100, 0.5), Average Value: 8990.00, Average Time: 0.0799 seconds
+Parameters: (100, 0.75), Average Value: 7242.00, Average Time: 0.0535 seconds
+Parameters: (100, 0.875), Average Value: 6900.00, Average Time: 0.0885 seconds
+Parameters: (100, 0.9375), Average Value: 6618.00, Average Time: 0.0895 seconds
+Parameters: (1000, 0.0625), Average Value: 8900.00, Average Time: 0.4595 seconds
+Parameters: (1000, 0.125), Average Value: 8900.00, Average Time: 0.4692 seconds
+Parameters: (1000, 0.25), Average Value: 9147.00, Average Time: 0.4659 seconds
+Parameters: (1000, 0.5), Average Value: 9147.00, Average Time: 0.4747 seconds
+Parameters: (1000, 0.75), Average Value: 8730.00, Average Time: 0.5336 seconds
+Parameters: (1000, 0.875), Average Value: 7570.00, Average Time: 0.5358 seconds
+Parameters: (1000, 0.9375), Average Value: 7129.00, Average Time: 0.5491 seconds
+Parameters: (10000, 0.0625), Average Value: 8900.00, Average Time: 4.4154 seconds
+Parameters: (10000, 0.125), Average Value: 8900.00, Average Time: 4.3747 seconds
+Parameters: (10000, 0.25), Average Value: 9147.00, Average Time: 4.3415 seconds
+Parameters: (10000, 0.5), Average Value: 9147.00, Average Time: 4.6013 seconds
+Parameters: (10000, 0.75), Average Value: 8528.00, Average Time: 4.9260 seconds
+Parameters: (10000, 0.875), Average Value: 8940.00, Average Time: 5.0472 seconds
+Parameters: (10000, 0.9375), Average Value: 8045.00, Average Time: 5.3294 seconds
