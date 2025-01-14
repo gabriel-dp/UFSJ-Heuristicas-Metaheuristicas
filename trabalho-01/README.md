@@ -94,3 +94,27 @@ for i in {1..50}; do ./bin/<programa> <parametro1> <...> <parametroN>; done
 > Solução ótima TSP (min) = **426**
 >
 > Solução ótima KP (max) = **9147**
+
+---
+
+### **Simulated Annealing - TSP**
+
+É possível observar uma característica comum entre os melhores resultados obtidos: Coeficiente de redução de temperatura próximo de 1 e número máximo de iterações.
+
+| Parâmetros | Valor médio | Tempo médio |
+|-|-|-|
+| (100, 0.1, 0.999, 100) | **453.38** | 0.6234 s |
+| (1000, 0.001, 0.999, 100) | 457.02 | 1.2246 s |
+| (10000, 0.1, 0.999, 100) | 458.39 | 1.0618 s |
+| (10000, 0.01, 0.999, 100) | 455.42 | 1.2613 s |
+| (10000, 0.001, 0.999, 100) | 459.19 | 1.4437 s |
+
+Contudo, é possível obter bons resultados com tempos médios de execução menores reduzindo o valor da temperatura inicial.
+
+| Parâmetros | Valor médio | Tempo médio |
+|-|-|-|
+| (100, 0.1, 0.999, 50) | 469.69 | 0.3269 |
+| (100, 0.1, 0.999, 100) | **453.38** | 0.6234 |
+| (100, 0.01, 0.999, 50) | 468.25 | 0.4218 |
+| (100, 0.01, 0.999, 100) | 463.18 | 0.8081 |
+| (100, 0.001, 0.999, 50) | 469.77 | 0.5100 |
