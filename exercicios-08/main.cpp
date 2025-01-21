@@ -101,7 +101,6 @@ vector<int> vns(map<int, map<int, double>> grafo) {
     vector<int> caminho = busca_local(inicial, grafo);
     LOG(imprime_caminho(caminho, grafo));
     for (int i = 0; i < VNSMAX; i++) {
-        printf("%d|%d\n", i, VNSMAX);
         for (int k = 1; k <= VMAX; k++) {
             vector<int> vizinho = vizinho_aleatorio(caminho, k);
             vector<int> vizinho_melhorado = busca_local(vizinho, grafo);
