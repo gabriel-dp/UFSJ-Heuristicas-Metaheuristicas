@@ -106,7 +106,7 @@ class Mochila {
 /* Constantes do algoritmo */
 int POPULACAO_INICIAL = 200;
 int GERACOES = 100;
-double MUTACAO = 0.05;
+double MUTACAO = 0.1;
 double REPRODUCAO = 2;
 
 /* Aleatoriedade */
@@ -160,7 +160,6 @@ vector<Mochila> selecao(vector<Mochila>& mochilas) {
                 auto it = indexes.begin();
                 std::advance(it, i);
                 selecionados.push_back(mochilas[*it]);
-                mochilas[*it].imprime();
                 indexes.erase(it);
                 break;
             }
@@ -170,10 +169,9 @@ vector<Mochila> selecao(vector<Mochila>& mochilas) {
     return selecionados;
 }
 
-vector<Mochila> reproducao(vector<Mochila>& pais) {
+vector<Mochila> reproducao(vector<Mochila>& pais, vector<Item>& itens) {
     vector<Mochila> filhos;
-    int quantidade_itens = pais[0].carga.size();
-    uniform_int_distribution<> dist_c(0, quantidade_itens - 1);
+    uniform_int_distribution<> dist_c(0, itens.size() - 1);
     uniform_real_distribution<double> dist_m(0.0, 1.0);
 
     // Casal
@@ -182,31 +180,34 @@ vector<Mochila> reproducao(vector<Mochila>& pais) {
         Mochila filho1 = pais[i].copia(), filho2 = pais[i + 1].copia();
 
         // Crossover
-        for (int j = divisao; j < quantidade_itens - 1; j++) {
-            Item item1 = pais[i].carga[j];
-            Item item2 = pais[i].carga[j];
-            filho1.contem(item2) ? filho1.remove(item2) : filho1.adiciona(item2);
-            filho2.contem(item1) ? filho2.remove(item1) : filho2.adiciona(item1);
+        for (size_t j = divisao; j < itens.size(); j++) {
+            Item item = itens[j];
+            bool filho1_tem = filho1.contem(item), filho2_tem = filho2.contem(item);
+            if (filho1_tem && !filho2_tem) {
+                filho1.remove(item);
+                filho2.adiciona(item);
+            } else if (!filho1_tem && filho2_tem) {
+                filho1.adiciona(item);
+                filho2.remove(item);
+            }
         }
 
         // Mutacao
         double probabilidade_mutacao_filho1 = dist_m(gen);
         if (probabilidade_mutacao_filho1 < MUTACAO) {
             int index_mutacao = dist_c(gen);
-            Item mutacao = filho1.carga[index_mutacao];
+            Item mutacao = itens[index_mutacao];
             filho1.contem(mutacao) ? filho1.remove(mutacao) : filho1.adiciona(mutacao);
         }
         double probabilidade_mutacao_filho2 = dist_m(gen);
         if (probabilidade_mutacao_filho2 < MUTACAO) {
             int index_mutacao = dist_c(gen);
-            Item mutacao = filho2.carga[index_mutacao];
+            Item mutacao = itens[index_mutacao];
             filho2.contem(mutacao) ? filho2.remove(mutacao) : filho2.adiciona(mutacao);
         }
 
         filhos.push_back(filho1);
-        filho1.imprime();
         filhos.push_back(filho2);
-        filho2.imprime();
     }
 
     return filhos;
@@ -223,10 +224,16 @@ vector<Mochila> sobrevivencia(vector<Mochila>& pais, vector<Mochila>& filhos) {
         return a.valido();
     });
 
-    geracao.erase(geracao.begin() + ((pais.size() + filhos.size()) / 2), geracao.end());
+    geracao.erase(geracao.begin() + (geracao.size() / 2), geracao.end());
+
+    int index_limite = 0;
     for (Mochila m : geracao) {
-        m.imprime();
+        if (!m.valido()) {
+            break;
+        }
+        index_limite++;
     }
+    geracao.erase(geracao.begin() + index_limite, geracao.end());
 
     return geracao;
 }
@@ -242,15 +249,13 @@ Mochila genetico(peso_t capacidade, vector<Item>& itens) {
 
     for (int i = 0; i < GERACOES; i++) {
         vector<Mochila> selecionados = selecao(populacao);
-        cout << "\nselecionei\n"
-             << selecionados.size() << "\n";
-        vector<Mochila> filhos = reproducao(selecionados);
-        cout << "\nreproduzi\n"
-             << filhos.size() << "\n";
+        vector<Mochila> filhos = reproducao(selecionados, itens);
         vector<Mochila> sobreviventes = sobrevivencia(populacao, filhos);
-        cout << "\nsobrevivi\n"
-             << sobreviventes.size() << "\n";
         populacao = sobreviventes;
+        LOG(
+            for (Mochila m : populacao) {
+                m.imprime();
+            })
     }
 
     return populacao[0];
@@ -288,7 +293,7 @@ void recebe_parametros(int argc, char* argv[]) {
 
 int main(int argc, char* argv[]) {
     recebe_parametros(argc, argv);
-    pair<double, vector<Item>> dados = recebe_capacidade_itens();
+    pair<peso_t, vector<Item>> dados = recebe_capacidade_itens();
 
     Mochila melhor = genetico(dados.first, dados.second);
     melhor.imprime();
