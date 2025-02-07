@@ -107,7 +107,7 @@ class Mochila {
 int POPULACAO_INICIAL = 200;
 int GERACOES = 100;
 double MUTACAO = 0.1;
-double REPRODUCAO = 2;
+double REPRODUCAO = 1;
 
 /* Aleatoriedade */
 random_device rd;
@@ -140,7 +140,7 @@ vector<Mochila> selecao(vector<Mochila>& mochilas) {
         indexes.insert(i);
     }
 
-    while (selecionados.size() < (mochilas.size() / 2) * REPRODUCAO) {
+    while (selecionados.size() < mochilas.size() * REPRODUCAO) {
         valor_t soma = 0;
         vector<double> probabilities;
 
@@ -284,11 +284,21 @@ pair<peso_t, vector<Item>> recebe_capacidade_itens() {
 
 /* Parametros passados por linha de comando */
 void recebe_parametros(int argc, char* argv[]) {
-    if (argc != 1 + 0) {
+    if (argc != 1 + 4) {
         cout << "Define the parameters"
+             << "<POPULACAO_INICIAL>"
+             << "<GERACOES>"
+             << "<MUTACAO>"
+             << "<REPRODUCAO>"
              << "\n";
         exit(1);
     }
+
+    // ./ag-kp <POPULACAO_INICIAL> <GERACOES> <MUTACAO> <REPRODUCAO>
+    POPULACAO_INICIAL = atoi(argv[1]);
+    GERACOES = atoi(argv[2]);
+    MUTACAO = atof(argv[2]);
+    REPRODUCAO = atof(argv[4]);
 }
 
 int main(int argc, char* argv[]) {
