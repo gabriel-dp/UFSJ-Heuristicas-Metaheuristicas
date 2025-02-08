@@ -242,10 +242,7 @@ Mochila genetico(peso_t capacidade, vector<Item>& itens) {
     vector<Mochila> populacao;
     for (int i = 0; i < POPULACAO_INICIAL; i++) {
         populacao.push_back(solucao_aleatoria(capacidade, itens));
-        populacao[i].imprime();
     }
-
-    cout << "\n\n";
 
     for (int i = 0; i < GERACOES; i++) {
         vector<Mochila> selecionados = selecao(populacao);
