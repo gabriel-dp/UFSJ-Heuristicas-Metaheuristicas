@@ -299,10 +299,10 @@ map<int, map<int, double>> recebe_grafo() {
 void recebe_parametros(int argc, char* argv[]) {
     if (argc != 1 + 4) {
         cout << "Define the parameters"
-             << "<POPULACAO_INICIAL>"
-             << "<GERACOES>"
-             << "<MUTACAO>"
-             << "<REPRODUCAO>"
+             << " <POPULACAO_INICIAL>"
+             << " <GERACOES>"
+             << " <MUTACAO>"
+             << " <REPRODUCAO>"
              << "\n";
         exit(1);
     }
