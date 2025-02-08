@@ -87,7 +87,7 @@ class Mochila {
         for (Item i : carga) {
             cout << "|" << i.indice;
         }
-        cout << "| (" << valor_atual << "/" << capacidade_atual << ")\n";
+        cout << "| (" << valor_atual << ")\n";
     }
 
     bool operator==(const Mochila& other) const {
