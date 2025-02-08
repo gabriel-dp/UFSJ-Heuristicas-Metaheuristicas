@@ -107,7 +107,6 @@ class Mochila {
 int POPULACAO_INICIAL = 200;
 int GERACOES = 100;
 double MUTACAO = 0.1;
-double REPRODUCAO = 1;
 
 /* Aleatoriedade */
 random_device rd;
@@ -140,7 +139,7 @@ vector<Mochila> selecao(vector<Mochila>& mochilas) {
         indexes.insert(i);
     }
 
-    while (selecionados.size() < mochilas.size() * REPRODUCAO) {
+    while (selecionados.size() < mochilas.size()) {
         valor_t soma = 0;
         vector<double> probabilities;
 
@@ -243,6 +242,7 @@ Mochila genetico(peso_t capacidade, vector<Item>& itens) {
     for (int i = 0; i < POPULACAO_INICIAL; i++) {
         populacao.push_back(solucao_aleatoria(capacidade, itens));
     }
+    Mochila melhor = populacao[0].copia();
 
     for (int i = 0; i < GERACOES; i++) {
         vector<Mochila> selecionados = selecao(populacao);
@@ -253,9 +253,13 @@ Mochila genetico(peso_t capacidade, vector<Item>& itens) {
             for (Mochila m : populacao) {
                 m.imprime();
             })
+
+        if (melhor.valor_atual < populacao[0].valor_atual) {
+            melhor = populacao[0].copia();
+        }
     }
 
-    return populacao[0];
+    return melhor;
 }
 
 /* Leitura dos itens e capacidade */
@@ -281,21 +285,19 @@ pair<peso_t, vector<Item>> recebe_capacidade_itens() {
 
 /* Parametros passados por linha de comando */
 void recebe_parametros(int argc, char* argv[]) {
-    if (argc != 1 + 4) {
+    if (argc != 1 + 3) {
         cout << "Define the parameters"
              << " <POPULACAO_INICIAL>"
              << " <GERACOES>"
              << " <MUTACAO>"
-             << " <REPRODUCAO>"
              << "\n";
         exit(1);
     }
 
-    // ./ag-kp <POPULACAO_INICIAL> <GERACOES> <MUTACAO> <REPRODUCAO>
+    // ./ag-kp <POPULACAO_INICIAL> <GERACOES> <MUTACAO>
     POPULACAO_INICIAL = atoi(argv[1]);
     GERACOES = atoi(argv[2]);
     MUTACAO = atof(argv[2]);
-    REPRODUCAO = atof(argv[4]);
 }
 
 int main(int argc, char* argv[]) {

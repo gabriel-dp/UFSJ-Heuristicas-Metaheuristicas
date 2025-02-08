@@ -12,7 +12,6 @@ using namespace std;
 int POPULACAO_INICIAL = 200;
 int GERACOES = 100;
 double MUTACAO = 0.1;
-double REPRODUCAO = 1;
 
 /* Aleatoriedade */
 random_device rd;
@@ -165,7 +164,7 @@ vector<Caminho> selecao(vector<Caminho>& caminhos) {
         indexes.insert(i);
     }
 
-    while (selecionados.size() < caminhos.size() * REPRODUCAO) {
+    while (selecionados.size() < caminhos.size()) {
         double soma = 0;
         vector<double> probabilities;
 
@@ -242,6 +241,7 @@ Caminho genetico(map<int, map<int, double>>& grafo) {
     for (int i = 0; i < POPULACAO_INICIAL; i++) {
         populacao.push_back(solucao_aleatoria(grafo));
     }
+    Caminho melhor = populacao[0].copia();
 
     for (int i = 0; i < GERACOES; i++) {
         vector<Caminho> selecionados = selecao(populacao);
@@ -252,9 +252,13 @@ Caminho genetico(map<int, map<int, double>>& grafo) {
             for (Caminho c : populacao) {
                 c.imprime();
             })
+
+        if (melhor.distancia_total > populacao[0].distancia_total) {
+            melhor = populacao[0].copia();
+        }
     }
 
-    return populacao[0];
+    return melhor;
 }
 
 /* Leitura do grafo */
@@ -297,21 +301,19 @@ map<int, map<int, double>> recebe_grafo() {
 
 /* Parametros passados por linha de comando */
 void recebe_parametros(int argc, char* argv[]) {
-    if (argc != 1 + 4) {
+    if (argc != 1 + 3) {
         cout << "Define the parameters"
              << " <POPULACAO_INICIAL>"
              << " <GERACOES>"
              << " <MUTACAO>"
-             << " <REPRODUCAO>"
              << "\n";
         exit(1);
     }
 
-    // ./ag-kp <POPULACAO_INICIAL> <GERACOES> <MUTACAO> <REPRODUCAO>
+    // ./ag-kp <POPULACAO_INICIAL> <GERACOES> <MUTACAO>
     POPULACAO_INICIAL = atoi(argv[1]);
     GERACOES = atoi(argv[2]);
-    MUTACAO = atof(argv[2]);
-    REPRODUCAO = atof(argv[4]);
+    MUTACAO = atof(argv[3]);
 }
 
 int main(int argc, char* argv[]) {
